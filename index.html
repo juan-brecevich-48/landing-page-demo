@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Landing Page - Start Bootstrap Theme</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"
+        type="text/css" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-light bg-dark static-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img id="navLogo" style="height: 40px;" alt="Logo" />
+                <a class="navbar-brand ms-2 text-white fw-bold" id="navBrand">...</a>
+            </div>
+            <a class="btn btn-primary" id="navBtn">...</a>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead" id="masthead">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <div class="text-center text-white">
+                        <!-- Page heading-->
+                        <h1 class="mb-5" id="mastheadTitle">...</h1>
+                        <p class="lead mb-0" id="mastheadSubtitle">...</p>
+                        <a class="btn btn-primary btn-lg mt-5" id="mastheadBtn" href="#">...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Features Grid -->
+    <section class="features-icons bg-light text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                        <div class="features-icons-icon d-flex"><i id="featureIcon1"></i></div>
+                        <h3 id="featureTitle1">...</h3>
+                        <p class="lead mb-0" id="featureText1">...</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                        <div class="features-icons-icon d-flex"><i id="featureIcon2"></i></div>
+                        <h3 id="featureTitle2">...</h3>
+                        <p class="lead mb-0" id="featureText2">...</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                        <div class="features-icons-icon d-flex"><i id="featureIcon3"></i></div>
+                        <h3 id="featureTitle3">...</h3>
+                        <p class="lead mb-0" id="featureText3">...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Image Showcases-->
+    <section class="showcase" id="showcases">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-1.jpg')"></div>
+                <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                    <h2 id="showcaseTitle1">...</h2>
+                    <p class="lead mb-0" id="showcaseText1">...</p>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-2.jpg')"></div>
+                <div class="col-lg-6 my-auto showcase-text">
+                    <h2 id="showcaseTitle2">...</h2>
+                    <p class="lead mb-0" id="showcaseText2">...</p>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-3.jpg')"></div>
+                <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                    <h2 id="showcaseTitle3">...</h2>
+                    <p class="lead mb-0" id="showcaseText3">...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="call-to-action text-white">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h2 class="mb-4 text-center" id="contactTitle">¿Listo para empezar? ¡Contáctanos ahora!</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label fw-bold ">Nombre</label>
+                            <input type="text" class="form-control border border-secondary" id="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="correo" class="form-label fw-bold">Correo electrónico</label>
+                            <input type="email" class="form-control border border-secondary" id="correo" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label fw-bold">Mensaje</label>
+                            <textarea class="form-control border border-secondary" id="mensaje" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="position-fixed top-0 end-0 p-3" style="z-index: 1050">
+        <div id="toast" class="toast align-items-center text-white border-0" role="alert" aria-live="assertive"
+            aria-atomic="true">
+            <div class="d-flex p-2">
+                <div class="toast-body fs-6" id="toastText">
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                    aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer bg-dark ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item"><a href="#!">About</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="#!">Contact</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="#!">Terms of Use</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="#!">Privacy Policy</a></li>
+                    </ul>
+                    <p id="footerYear" class="text-muted small mb-4 mb-lg-0">&copy; 2023 Your Company. All rights
+                        reserved.</p>
+                </div>
+                <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item me-4">
+                            <a href="#!"><i class="bi-facebook fs-3"></i></a>
+                        </li>
+                        <li class="list-inline-item me-4">
+                            <a href="#!"><i class="bi-twitter fs-3"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#!"><i class="bi-instagram fs-3"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- Page config JS-->
+    <script src="js/config.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- Contact form JS -->
+    <script src="js/contact.js"></script>
+</body>
+
+</html>
