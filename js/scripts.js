@@ -11,6 +11,7 @@ window.addEventListener('DOMContentLoaded', event => {
         setFeatures(cfg);
         setShowcases(cfg);
         setContact(cfg);
+        setFooter(cfg);
     };
 
     renderConfig();
@@ -160,7 +161,6 @@ function setContact(cfg) {
     if (contactTitle && cfg.contact.title) {
         contactTitle.textContent = cfg.contact.title;
     }
-
     if (contactBackground) {
         if (cfg.contact.backgroundImg) {
             contactBackground.style.backgroundImage = `url('${cfg.contact.backgroundImg}')`;
@@ -171,5 +171,28 @@ function setContact(cfg) {
         if (cfg.contact.backgroundColor) {
             contactBackground.style.backgroundColor = cfg.contact.backgroundColor;
         }
+    }
+}
+
+function setFooter(cfg) {
+    const footerYear = document.getElementById('footerYear');
+    const socialLinks = document.getElementById('socialLinks');
+    if (footerYear && cfg.footer.year) {
+        footerYear.textContent += cfg.footer.year;
+    }
+    
+    if (socialLinks && cfg.footer.social) {
+        socialLinks.innerHTML = '';
+        cfg.footer.social.forEach(social => {
+            const li = document.createElement('li');
+            li.className = 'list-inline-item me-4';
+            const a = document.createElement('a');
+            a.href = social.href;
+            const i = document.createElement('i');
+            i.className = social.icono + ' fs-3';
+            a.appendChild(i);
+            li.appendChild(a);
+            socialLinks.appendChild(li);
+        });
     }
 }

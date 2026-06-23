@@ -57,31 +57,13 @@ var pageConfig = {
     backgroundImg: "assets/img/banner-2.png",
     backgroundAlt: "Imagen de fondo del masthead",
     backgroundColor: "#343a40",
-    cards: [
-      {
-        icono: "fas fa-map-marked-alt",
-        titulo: "Address",
-        texto: "4923 Market Street, Orlando FL"
-      },
-      {
-        icono: "fas fa-envelope",
-        titulo: "Email",
-        texto: "hello@yourdomain.com",
-        enlace: "#!"
-      },
-      {
-        icono: "fas fa-mobile-alt",
-        titulo: "Phone",
-        texto: "+1 (555) 902-8832"
-      }
-    ],
-    social: [
-      { icono: "fab fa-twitter", href: "#!" },
-      { icono: "fab fa-facebook-f", href: "#!" },
-      { icono: "fab fa-github", href: "#!" }
-    ]
   },
   footer: {
-    year: "© " + new Date().getFullYear(),
+    year: " " + new Date().getFullYear() + " todos los derechos reservados.",
+    social: [
+      { icono: "bi-twitter", href: "#!" },
+      { icono: "bi-facebook", href: "#!" },
+      { icono: "bi-instagram", href: "#!" }
+    ]
   }
 };
